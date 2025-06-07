@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "9aad13a2-ff88-4a67-b2e0-f7716320cd80",
+		"name": "HTTPBIN",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39270059"
+	},
+	"item": [
+		{
+			"name": "SetCookies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASEURL}}/cookies/set?freeform={{cookies}}",
+					"host": [
+						"{{BASEURL}}"
+					],
+					"path": [
+						"cookies",
+						"set"
+					],
+					"query": [
+						{
+							"key": "freeform",
+							"value": "{{cookies}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{BASEURL}}/cookies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASEURL}}/cookies",
+					"host": [
+						"{{BASEURL}}"
+					],
+					"path": [
+						"cookies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{BASEURL}}/cookies/delete?freeform={{cookies}}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASEURL}}/cookies/delete?freeform={{cookies}}",
+					"host": [
+						"{{BASEURL}}"
+					],
+					"path": [
+						"cookies",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "freeform",
+							"value": "{{cookies}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
